@@ -1,6 +1,13 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
+  const navigate = useNavigate()
+
+  const handleAcademicQualificationsClick = () => {
+    navigate('/academic-qualifications')
+  }
+
   return (
     <div className='container'>
       <h1>Welcome Stranger! This is my Portfolio</h1>
@@ -8,6 +15,22 @@ const Home = () => {
       <p>My goal is to become a <strong>Software Engineer</strong> and to be able to work in a company that is passionate about what they do and to be able to work with people who are passionate about what they do.</p>
       <h2>Education</h2>
       <hr/>
+      <div className='navigation-button-section'>
+        <p>Check my Academic Qualifications here</p>
+        <button onClick={handleAcademicQualificationsClick}>Click Here</button>
+      </div>
+      <div className='navigation-button-section'>
+        <p>Check my Skills here</p>
+        <button>Click Here</button>
+      </div>
+      <div className='navigation-button-section'>
+        <p>Check my Projects here</p>
+        <button>Click Here</button>
+      </div>
+      <div className='navigation-button-section'>
+        <p>Check my Work Experience here</p>
+        <button>Click Here</button>
+      </div>
     </div>
   )
 }

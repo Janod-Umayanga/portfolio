@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 // Pages
 import Home from './pages/Home'
+import AcademicQualifications from './pages/AcademicQualifications'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/academic-qualifications" element={<AcademicQualifications />} />
         </Routes>
       </Router>
     </>
